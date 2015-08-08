@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-export default function imagelayer() {
+module.exports = function imagelayer() {
 	var x = d3.scale.linear(),
 	y = d3.scale.linear(),
 	id = "fp-imagelayer-" + new Date().valueOf(),

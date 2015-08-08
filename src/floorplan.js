@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-export default function floorplan() {
+module.exports = function floorplan() {
 	var layers = [],
 	panZoomEnabled = true,
 	maxZoom = 5,

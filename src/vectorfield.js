@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-export default function vectorfield() {
+module.exports = function vectorfield() {
 	var x = d3.scale.linear(),
 	y = d3.scale.linear(),
 	line = d3.svg.line()

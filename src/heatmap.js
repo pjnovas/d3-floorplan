@@ -13,7 +13,8 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 //
-export default function heatmap() {
+
+module.exports = function heatmap() {
 	var colors = "RdYlBu",
 	scaleType = "quantile",
 	x = d3.scale.linear(),

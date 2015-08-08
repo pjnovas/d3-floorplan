@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-export default function pathplot() {
+module.exports = function pathplot() {
 	var x = d3.scale.linear(),
 	y = d3.scale.linear(),
 	line = d3.svg.line()

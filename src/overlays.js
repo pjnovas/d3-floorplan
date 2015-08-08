@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-export default function overlays() {
+module.exports = function overlays() {
 	var x = d3.scale.linear(),
 	y = d3.scale.linear(),
 	id = "fp-overlays-" + new Date().valueOf(),
