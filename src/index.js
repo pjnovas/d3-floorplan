@@ -20,7 +20,7 @@ d3.floorplan.overlays = overlays;
 d3.floorplan.pathplot = pathplot;
 d3.floorplan.vectorfield = vectorfield;
 
-export {
+module.exports = {
   floorplan,
   heatmap,
   imagelayer,
@@ -28,5 +28,3 @@ export {
   pathplot,
   vectorfield
 };
-
-export default floorplan;
