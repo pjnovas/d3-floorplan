@@ -28,3 +28,5 @@ export {
   pathplot,
   vectorfield
 };
+
+export default floorplan;
