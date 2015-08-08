@@ -11,8 +11,9 @@ if (!window.d3){
 
 let d3 = window.d3;
 
+floorplan.version = require('../package.json').version;
+
 d3.floorplan = floorplan;
-d3.floorplan.version = require('../package.json').version;
 
 d3.floorplan.heatmap = heatmap;
 d3.floorplan.imagelayer = imagelayer;
@@ -20,11 +21,4 @@ d3.floorplan.overlays = overlays;
 d3.floorplan.pathplot = pathplot;
 d3.floorplan.vectorfield = vectorfield;
 
-module.exports = {
-  floorplan,
-  heatmap,
-  imagelayer,
-  overlays,
-  pathplot,
-  vectorfield
-};
+module.exports = floorplan;
