@@ -13,8 +13,7 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 //
-
-d3.floorplan.heatmap = function() {
+export default function heatmap() {
 	var colors = "RdYlBu",
 	scaleType = "quantile",
 	x = d3.scale.linear(),
@@ -53,16 +52,14 @@ d3.floorplan.heatmap = function() {
 				colorScale = d3.scale.quantize()
 							.range([1,2,3,4,5,6])
 							.domain([values[0],values[values.length-1]]);
-				var incr = (colorScale.domain()[1] - colorScale.domain()[0]) 
-							/ 6;
+				var incr = (colorScale.domain()[1] - colorScale.domain()[0]) / 6;
 				thresholds = [incr, 2*incr, 3*incr, 4*incr, 5*incr];
 				break;
 			  } 
 			  case "normal": {
 				var mean = d3.mean(values);
 				var sigma = Math.sqrt(d3.sum(values, 
-						function(v) {return Math.pow(v-mean,2);})
-						/values.length);
+						function(v) {return Math.pow(v-mean,2);}) /values.length);
 				colorScale = d3.scale.quantile()
 							.range([1,2,3,4,5,6])
 							.domain([mean-6*sigma,mean-2*sigma,

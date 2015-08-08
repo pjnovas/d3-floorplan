@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-d3.floorplan.imagelayer = function() {
+export default function imagelayer() {
 	var x = d3.scale.linear(),
 	y = d3.scale.linear(),
 	id = "fp-imagelayer-" + new Date().valueOf(),

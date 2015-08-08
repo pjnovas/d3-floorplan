@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-d3.floorplan.overlays = function() {
+export default function overlays() {
 	var x = d3.scale.linear(),
 	y = d3.scale.linear(),
 	id = "fp-overlays-" + new Date().valueOf(),

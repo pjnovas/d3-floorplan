@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-d3.floorplan = function() {
+export default function floorplan() {
 	var layers = [],
 	panZoomEnabled = true,
 	maxZoom = 5,
@@ -315,5 +315,3 @@ d3.floorplan = function() {
 
 	return map;
 };
-
-d3.floorplan.version = "0.1.0";

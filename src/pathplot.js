@@ -14,7 +14,7 @@
 //   limitations under the License.
 //
 
-d3.floorplan.pathplot = function() {
+export default function pathplot() {
 	var x = d3.scale.linear(),
 	y = d3.scale.linear(),
 	line = d3.svg.line()
